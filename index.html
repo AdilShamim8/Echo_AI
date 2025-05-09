@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Echo AI</title>
+</head>
+
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="navbar__left">
+                <h3 class="navbar__logo">Echo AI</h3>
+            </div>
+            <div class="navbar__right">
+                <button class="navbar__button" id="themeToggler" title="Toggle theme">
+                    <i class='bx bx-sun'></i>
+                </button>
+            </div>
+        </nav>
+
+        <header class="header">
+            <div class="header__title">
+                <h1>Hello, There!</h1>
+                <h2>How can I help you today?</h2>
+            </div>
+            <div class="suggests">
+                <div class="suggests__item">
+                    <p class="suggests__item-text">
+                        Give tips on helping kids finish their homework on time
+                    </p>
+                    <div class="suggests__item-icon">
+                        <i class='bx bx-stopwatch'></i>
+                    </div>
+                </div>
+                <div class="suggests__item">
+                    <p class="suggests__item-text">
+                        Help me write an out-of-office email
+                    </p>
+                    <div class="suggests__item-icon">
+                        <i class='bx bx-edit-alt'></i>
+                    </div>
+                </div>
+                <div class="suggests__item">
+                    <p class="suggests__item-text">
+                        Give me phrases to learn a new language
+                    </p>
+                    <div class="suggests__item-icon">
+                        <i class='bx bx-compass'></i>
+                    </div>
+                </div>
+                <div class="suggests__item">
+                    <p class="suggests__item-text">
+                        Show me how to build something by hand
+                    </p>
+                    <div class="suggests__item-icon">
+                        <i class='bx bx-wrench'></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="chats">
+            <!-- Example message with new features -->
+            <div class="message message--incoming">
+                <div class="message__content">
+                    <img class="message__avatar" src="assets/gemini.svg" alt="Gemini avatar">
+                    <div class="message__text">
+                        Hello! I'm Echo AI, your intelligent assistant. How can I help you today?
+                    </div>
+                    <div class="message__actions">
+                        <button class="message__action-btn" title="Copy message">
+                            <i class='bx bx-copy'></i>
+                        </button>
+                        <button class="message__action-btn" title="Save message">
+                            <i class='bx bx-bookmark'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="message__reactions">
+                    <button class="reaction-btn" title="Like">
+                        <i class='bx bx-like'></i>
+                    </button>
+                    <button class="reaction-btn" title="Dislike">
+                        <i class='bx bx-dislike'></i>
+                    </button>
+                </div>
+                <div class="message__status delivered">
+                    <i class='bx bx-check-double'></i>
+                    <span>Delivered</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="prompt">
+            <form action="#" class="prompt__form" novalidate>
+                <div class="prompt__input-wrapper">
+                    <input type="text" placeholder="Enter a prompt here" class="prompt__form-input" required>
+                    <button class="prompt__form-button" id="sendButton" title="Send message">
+                        <i class='bx bx-send'></i>
+                    </button>
+                    <button class="prompt__form-button" id="deleteButton" title="Clear chat">
+                        <i class='bx bx-trash'></i>
+                    </button>
+                </div>
+            </form>
+            <div class="quick-actions">
+                <button class="quick-action-btn" title="Generate image">
+                    <i class='bx bx-image'></i>
+                    Generate Image
+                </button>
+                <button class="quick-action-btn" title="Voice input">
+                    <i class='bx bx-microphone'></i>
+                    Voice Input
+                </button>
+                <button class="quick-action-btn" title="Upload file">
+                    <i class='bx bx-upload'></i>
+                    Upload File
+                </button>
+            </div>
+            <p class="prompt__disclaim">
+                <i class='bx bx-info-circle'></i>
+                Echo AI may display inaccurate info, including about people, so double-check its responses.
+            </p>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
